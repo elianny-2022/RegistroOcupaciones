@@ -43,27 +43,31 @@ fun RegistroOcupaciones(modifier: Modifier) {
         Spacer(modifier = Modifier.padding(4.dp),)
         Salario()
         Spacer(modifier = Modifier.padding(8.dp))
-        GuardarButton()
+        GuardarButton(Modifier.align(Alignment.CenterHorizontally))
         Spacer(modifier = Modifier.padding(16.dp))
     }
 }
 
 @Composable
-fun GuardarButton() {
+fun GuardarButton(modifier: Modifier) {
         OutlinedButton(
             onClick = { },
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(50.dp),
+            contentPadding = PaddingValues(
+                start = 50.dp,
+                top = 20.dp,
+                end = 60.dp,
+                bottom = 18.dp
+            ),
+
             colors = ButtonDefaults.textButtonColors(
                 backgroundColor = Color(0xFF6A2377)
             ),
+            modifier = modifier,
             shape = CircleShape,
         )
         {
-            //Image(painter = painterResource(id = R.drawable.guar), contentDescription = "imagen" )
-            Icon(imageVector = Icons.Default.Add, contentDescription = "Guardar")
-            //Icon(Icons.Filled.Check, contentDescription = "Guardar", modifier = Modifier.size(ButtonDefaults.IconSize))
+            Image(painter = painterResource(id = R.drawable.save), contentDescription = "imagen" )
+            //Icon(Icons.Filled.Add, contentDescription = "Agregar", modifier = Modifier.size(ButtonDefaults.IconSize))
             Spacer(Modifier.size(ButtonDefaults.IconSpacing))
             Text("Guardar", fontSize = 20.sp,
                 fontStyle = FontStyle.Italic,
@@ -142,6 +146,8 @@ fun CenterText(modifier: Modifier) {
     Text("Registro de Ocupaciones",
         fontStyle = FontStyle.Italic,
         fontWeight = FontWeight.Bold,
+        fontFamily = FontFamily.SansSerif,
         fontSize = 28.sp,
-        textAlign = TextAlign.Center, modifier = modifier)
+        textAlign = TextAlign.Center,
+        modifier = modifier)
 }
