@@ -61,8 +61,8 @@ fun GuardarButton() {
             shape = CircleShape,
         )
         {
-            Image(painter = painterResource(id = R.drawable.guar), contentDescription = "imagen" )
-           // Icon(imageVector = Icons.Default.Email, contentDescription = "Guardar")
+            //Image(painter = painterResource(id = R.drawable.guar), contentDescription = "imagen" )
+            Icon(imageVector = Icons.Default.Add, contentDescription = "Guardar")
             //Icon(Icons.Filled.Check, contentDescription = "Guardar", modifier = Modifier.size(ButtonDefaults.IconSize))
             Spacer(Modifier.size(ButtonDefaults.IconSpacing))
             Text("Guardar", fontSize = 20.sp,
