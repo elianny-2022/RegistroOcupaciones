@@ -1,4 +1,4 @@
 # RegistroOcupaciones
 Registro de ocupaciones
-Aun tengo un tema con el boton de guardar
-![image](https://user-images.githubusercontent.com/104779804/212559526-630b0af2-0c32-49ef-b4a2-a80aacba2a06.png)
+En la tablet
+![IMG-6233](https://user-images.githubusercontent.com/104779804/212572229-8757077c-d2a9-463c-9fe3-c91b13462c24.JPG)
